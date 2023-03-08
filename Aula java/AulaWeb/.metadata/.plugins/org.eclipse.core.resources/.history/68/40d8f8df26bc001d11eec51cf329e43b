@@ -1,0 +1,17 @@
+package br.com.AulaWeb.dao;
+import java.sql.*;
+import br.com.AulaWeb.entidades.*;
+
+public class Clientedao extends Conexao {
+   
+	public void adicionar(Cliente cliente) {
+		String  sql = "insert into cliente(nomeCliente,cpfCliente,emailCliente) "
+				+ "values(?,?,?)";
+	try {
+		stmt = con.prepareStatement(sql);
+	}catch(SQLException e) {
+		
+	}
+	}
+	
+}
