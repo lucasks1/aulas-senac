@@ -35,7 +35,7 @@ public class ClienteDao extends Conexao{
 		while (rs.next()) {
 		// criando o objeto Cliente
 		Cliente cliente = new Cliente();
-		cliente.setCodCliente(rs.getInt("idCliente"));
+		cliente.setCodCliente(rs.getInt("CodCliente"));
 		cliente.setNomeCliente(rs.getString("nomeCliente"));
 		cliente.setEmailCliente(rs.getString("emailCliente"));
 		cliente.setCpfCliente(rs.getString("cpfCliente"));

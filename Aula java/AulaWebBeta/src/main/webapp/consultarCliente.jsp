@@ -23,5 +23,36 @@ Nome: <input type="text" name="nome"  placeholder="Nome do Cliente" class="form-
 </form>
 ${msg}
 
+<c:if test = "${fn:length(lista) >0 }">
+
+<table class="table" >
+ <thead>
+        <tr>
+           <th scope="col">ID</th>
+<th scope="col">NOME CLIENTE</th>
+<th scope="col">EMAIL</th>
+<th scope="col">CPF</th>
+<th scope="col">AÇÕES</th> 
+        </tr>
+ <thead>
+ 
+ <c:forEach  var="linha" items="${lista}" >
+    <tbody>
+        <tr>
+            <td scope="row"> ${linha.idCliente}</td>       
+            <td> ${linha.nomeCliente}</td>
+            <td> ${linha.emailCliente}</td>
+            
+            <td> ${linha.cpf}</td>                       
+            <td><a href="editarCliente.html?id=${linha.idCliente}"  class="btn btn-warning">Editar</a>
+	<a href="excluirCliente.html?id=${linha.idCliente}"  class="btn btn-danger"
+onclick="return confirm('Deseja realmente excluir o Cliente?')">Excluir</a>
+</td>
+        </tr>
+       </tbody>
+    </c:forEach>
+</table>
+</c:if>
+
 </body>
 </html>
