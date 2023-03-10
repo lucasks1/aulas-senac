@@ -1,7 +1,0 @@
-INDEX VERSION 1.4+C:\Users\169127512022.4\Documents\Aula java\AulaWeb\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-618181980.index
-2811712616.index
-1221778476.index
-501148671.index
-3829116740.index
-4233995091.index

@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-C:\Users\169127512022.4\Documents\Aula java\AulaWeb\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2811712616.index
-\Aula07Web\src\main\java
