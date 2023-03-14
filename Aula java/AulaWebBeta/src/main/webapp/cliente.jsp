@@ -24,6 +24,7 @@
 	</p>
 	<p>
 		<button type="submit">Cadastrar</button>
+		<a href="consutarCliente.jsp"  class="btn btn-warning">Editar</a>
 	</p>
 	</form>
 </body>
