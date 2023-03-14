@@ -11,7 +11,7 @@ public class ClienteDao extends Conexao{
 		String sql = "insert into cliente(nomeCliente,cpfCliente,emailCliente) "
 				+ "values (?,?,?)";
 		try {
-		open();
+			open();
 			stmt = con.prepareStatement(sql);
 			stmt.setString(1, cliente.getNomeCliente());
 			stmt.setString(2, cliente.getCpfCliente());
@@ -22,7 +22,8 @@ public class ClienteDao extends Conexao{
 			throw new RuntimeException(e);
 		}
 	}
-	public List <Cliente> listarCliente(String nome) throws ClassNotFoundException, SQLException {
+	
+	public List<Cliente> listarCliente(String nome) throws ClassNotFoundException, SQLException {
 
 		open();
 
@@ -35,7 +36,7 @@ public class ClienteDao extends Conexao{
 		while (rs.next()) {
 		// criando o objeto Cliente
 		Cliente cliente = new Cliente();
-		cliente.setCodCliente(rs.getInt("CodCliente"));
+		cliente.setCodCliente(rs.getInt("codCliente"));
 		cliente.setNomeCliente(rs.getString("nomeCliente"));
 		cliente.setEmailCliente(rs.getString("emailCliente"));
 		cliente.setCpfCliente(rs.getString("cpfCliente"));
@@ -48,4 +49,42 @@ public class ClienteDao extends Conexao{
 
 		}
 	
-}
+	public Cliente buscarPorIdCliente(int codCliente) throws ClassNotFoundException, SQLException {
+		open();
+		String sql = "select * from cliente where codCliente = ?";
+		stmt = con.prepareStatement(sql);
+		stmt.setInt(1, codCliente);
+
+		Cliente cliente = null;
+		rs = stmt.executeQuery();
+
+		if (rs.next()) {
+		cliente = new Cliente(
+				rs.getInt("codCliente"), 
+				rs.getString("nomeCliente"), 
+				rs.getString("emailCliente"),		
+		rs.getString("cpfCliente"));
+		}
+		
+		return cliente;
+		}
+	
+	public void editar(Cliente cliente) throws ClassNotFoundException {
+		String sql = "update cliente set nomeCliente=?, emailCliente=?,  cpfCliente=? where codCliente=?";
+
+		try {
+		open();
+		stmt = con.prepareStatement(sql);
+		stmt.setString(1, cliente.getNomeCliente());
+		stmt.setString(2, cliente.getEmailCliente());
+		stmt.setString(3, cliente.getCpfCliente());
+		stmt.setInt(4, cliente.getCodCliente());
+
+		stmt.execute();
+		
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+		}
+
+} 

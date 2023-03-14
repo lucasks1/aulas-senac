@@ -1,7 +1,7 @@
 package br.com.AulaWeb.entidades;
 
 public class Cliente {
-
+	
 	protected int codCliente;
 	public String nomeCliente;
 	public String cpfCliente;

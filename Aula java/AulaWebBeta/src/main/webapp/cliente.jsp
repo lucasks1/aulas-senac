@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Cadastrar Anime</title>
+<title>Aula Web Beta</title>
+
 </head>
 <body>
-<img alt="" src="https://media.tenor.com/mFDPXvyZT7IAAAAM/luffy-one-piece.gif">
-<h1>Cadastro OnePiece</h1>
+<h1>Cadastro de Clientes</h1>
 	<form action="cadastrarCliente" method="post">
 	<p>
 		<label for="nome">Nome:</label>

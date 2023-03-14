@@ -9,13 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.AulaWeb.dao.ClienteDao;
-import br.com.AulaWeb.entidades.Cliente;
 
+import br.com.AulaWeb.dao.*;
+import br.com.AulaWeb.entidades.*;
 /**
  * Servlet implementation class ClienteController
  */
-@WebServlet(name="/ClienteController",urlPatterns = {"/cadastrarCliente","/buscarCliente"})
+@WebServlet(name="/ClienteController",urlPatterns = {"/cadastrarCliente","/buscarCliente",
+		"/confirmarCliente","/editarCliente","/excluirCliente"})
 public class ClienteController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -35,7 +36,8 @@ public class ClienteController extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		executar(request,response);
 	}
-
+	
+	
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -45,16 +47,22 @@ public class ClienteController extends HttpServlet {
 	}
 	
 	public void executar(HttpServletRequest request,HttpServletResponse response) 
-	throws ServletException, IOException  {
+	throws ServletException, IOException{
 		try {
 			String url = request.getServletPath();
 			if(url.equalsIgnoreCase("/cadastrarCliente")) {
 				cadastrar(request,response);
-			} else if (url.equalsIgnoreCase("/buscarCliente")) {
+					
+			}else if(url.equalsIgnoreCase("/buscarCliente")) { 
 				buscar(request,response);
-			}
-			else {
-				throw new Exception("URL Inválida"); 
+			}else if(url.equalsIgnoreCase("/confirmarCliente")) { 
+				confirmar(request,response);
+			}else if(url.equalsIgnoreCase("/editarCliente")) { 
+				editar(request,response);
+			}else if(url.equalsIgnoreCase("/excluirCliente")) { 
+				//excluir(request,response);
+			}else {
+				throw new Exception("URL Inválida");
 			}
 		}catch(Exception e) {
 			response.sendRedirect("cliente.jsp");
@@ -90,7 +98,7 @@ public class ClienteController extends HttpServlet {
 			request.getRequestDispatcher("cliente.jsp").forward(request, response);
 		}
 	}
-
+	
 	public void buscar(HttpServletRequest request, HttpServletResponse response) {
 		try {
 		String nomeCliente = request.getParameter("nome");
@@ -103,10 +111,64 @@ public class ClienteController extends HttpServlet {
 		}
 		request.setAttribute("nomeCliente", nomeCliente);
 		request.setAttribute("lista", lista);
-		request.getRequestDispatcher("consularCliente.jsp").forward(request, response);
+		request.getRequestDispatcher("consultarCliente.jsp").forward(request, response);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}
+		}
+	
+	@SuppressWarnings("removal")
+	public void confirmar(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+			try {
 
+			// Pegando os parâmetros passados pelo formulário
+			String nome = request.getParameter("nome");
+			String email = request.getParameter("email");
+			String cpf = request.getParameter("cpf");
+			String codCliente = request.getParameter("codigo");
+
+			// Instanciando um Objeto do tipo Cliente
+			Cliente cliente = new Cliente();
+			cliente.setNomeCliente(nome);
+			cliente.setEmailCliente(email);
+			cliente.setCpfCliente(cpf);// Instanciando um Objeto do tipo ClienteDao
+			cliente.setCodCliente(new Integer(codCliente));
+			// Gravando os dados no Banco de Dados
+
+			ClienteDao pd = new ClienteDao();
+			pd.editar(cliente);
+			request.getSession().setAttribute("cliente", cliente);
+			request.setAttribute("msg", "<div class='alert alert-success'>Cliente atualizado!</div>");
+
+			} catch (Exception e) {
+			e.printStackTrace();
+			request.setAttribute("msg", "<div class='alert alert-danger'>Cliente não Atualizado!</div>");
+			} finally {
+			request.getRequestDispatcher("consultarCliente.jsp").forward(request, response);
+			}
+
+			}
+
+	
+	@SuppressWarnings("removal")
+	public void editar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		try {
+		// Capturando o Id do Cliente vindo do formulário
+		Integer idCliente = new Integer(request.getParameter("codCliente"));
+		Cliente cli = new ClienteDao().buscarPorIdCliente(idCliente);
+
+		if (cli == null) {
+		request.setAttribute("msg", "<div class='alert alert-info'>Cliente não encontrado!</div>");
+		request.getRequestDispatcher("consultarCliente.jsp").forward(request, response);
+		} else {
+		request.setAttribute("cli", cli);
+		request.getRequestDispatcher("editarCliente.jsp").forward(request, response);
+		}
+		} catch (Exception e) {
+		e.printStackTrace();
+		request.setAttribute("msg", "<div class='alert alert-danger'>Erro: " + e.getMessage() + "</div>");
+		request.getRequestDispatcher("consultarCliente.jsp").forward(request, response);
+		}
+		}
 }
