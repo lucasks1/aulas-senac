@@ -35,4 +35,7 @@ public class AssertTest {
 	Assert.assertNotNull(u2);
 	
 	}
+	
+	
 }
+
