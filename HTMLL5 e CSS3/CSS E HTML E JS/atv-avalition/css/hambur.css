@@ -1,0 +1,59 @@
+body {
+    background-color: black !important;
+}
+
+#nome {
+    text-align: center;
+    color: orange;
+}
+
+#flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    height: fit-content;
+    padding: 10px
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    max-width: 200px;
+
+    background: #ffffffaa;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px 2px #0000009e;
+}
+
+.button-card {
+    padding: 5px;
+    background-color: #ffffffaa;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.button-card:hover {
+    background-color: gold;
+    transition: all 10ms ease;
+}
+
+@media screen and (max-width:900px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        width: 300px;
+        grid-template-rows: repeat(5, 1fr);
+        margin: 50px 30px;
+        padding: 120px;
+    }
+
+}
+

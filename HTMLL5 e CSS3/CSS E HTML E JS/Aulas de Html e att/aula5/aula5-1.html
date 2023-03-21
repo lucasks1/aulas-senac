@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /* seletor descendente - espaço
+div p { background-color: yellow;}
+/*
+
+/*  seletor child(filho)o seletor filho seleciona todos os elementos que são 
+filhos de um elemento especifico.-Simbolo - >
+    div > p {background-color: yellow;}
+*/
+/* seletor irmão
+o seletor irmão adjascente é usado para selwcionar u  elemento
+que está diretamente após  outro elemento especifico.
+Elmentos irmãos devem ter o mesmo elemento pai,
+e "adjascente" significa "imediatamente a seguir". Simbolo - +
+
+*/
+div ~ p {background-color: skyblue;}
+
+  </style>
+  <body>
+    <p> elemento antes da div e fora </p>
+    <div>
+         <p> elemento p dentro do div </p>
+         <section>
+            <p>segundo elemento p não filho da div</p>
+         </section>
+    </div>
+<p>elemento antes da div e fora</p>
+</body>
+</html>

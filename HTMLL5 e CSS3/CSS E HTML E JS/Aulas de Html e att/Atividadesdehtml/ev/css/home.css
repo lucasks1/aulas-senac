@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(194, 173, 173);
+}
+
+.button{
+    background-color: red;
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    margin: 4px 2px;
+    display: inline;
+}
+
+.button:hover{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    float: right;
+}
+p{
+    text-align: center;
+    width:200px;
+}
+h1{
+    text-align: center;
+}
+.serv1{
+    border-image-width: auto;
+}

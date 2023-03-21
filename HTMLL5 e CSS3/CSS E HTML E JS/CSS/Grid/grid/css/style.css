@@ -1,0 +1,56 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #8b2e2e;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+
+  /* define quantidade de colunas tera na grid*/
+  grid-template-columns: 200px 200px 200px;
+
+  /* Define quantidade de linhas na grid*/
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 10px;
+  /* content - alinha os elementos em relação a grid*/
+  /*allgn-content: vertical , justify:horizontal*/
+
+  justify-content: center;
+  align-content: center;
+}
+
+.square {
+  width: 100%;
+
+  background: rgb(114, 177, 250);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+
+  #unica {
+    grid-column: 1 / span 2;
+  }
+  
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+  }
+  #unica {
+    grid-column: 1/1;
+  }
+}
+
+

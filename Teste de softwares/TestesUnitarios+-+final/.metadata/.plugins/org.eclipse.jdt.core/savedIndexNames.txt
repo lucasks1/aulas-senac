@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\169127512022.4\Downloads\teste\TestesUnitarios+-+final\.metadata\.plugins\org.eclipse.jdt.core
+2918323094.index
+3924229942.index
+1865797976.index
