@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pessoa } from 'src/app/model/pessoa';
-import { PessoaServiceService } from 'src/app/model/pessoa-service.service';
-
+import { PessoaServiceService } from "src/app/model/pessoa-service.service";
 @Component({
   selector: 'app-pessoas',
   templateUrl: './pessoas.component.html',
@@ -9,24 +8,25 @@ import { PessoaServiceService } from 'src/app/model/pessoa-service.service';
 })
 export class PessoasComponent implements OnInit {
 
-  pessoa : Pessoa[]=[];
+pessoas :Pessoa[]=[];
 
-  constructor(private service: PessoaServiceService){}
+constructor(private service: PessoaServiceService){}
+ngOnInit(): void {
+  this.listarPessoas();
+}
 
-  ngOnInit(): void{
-    this.listarPessoas();
-  }
+listarPessoas():void{
 
-  listarPessoas() : void{
-    this.listarPessoas().subscribe{
-      pessoa =>{
-        this.pessoa = pessoa;
-      },
-      error => {
-        console.log(error)
-      }
-      
-        
+  this.service.getPessoa().subscribe(
+
+    pessoas =>{
+
+      this.pessoas=pessoas;
+    },
+    error=>{
+      console.log(error);
     }
-  }
+  )
+}
+
 }

@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PessoaServiceService } from './model/pessoa-service.service';
-import { CondicionalComponent } from './page/condicional/condicional.component';
-import { HomeComponent } from './page/home/home.component';
-import { PipeComponent } from './page/pipe/pipe.component';
+import { PessoasComponent } from './page/pessoas/pessoas.component';
 
 const routes: Routes = [
-  { path: '', component:PessoaServiceService },
-]
+{path:'',component: PessoasComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
