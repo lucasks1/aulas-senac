@@ -1,0 +1,362 @@
+.accordion-section-title:after, .handlediv, .item-edit, .sidebar-name-arrow, .widget-action {
+    color: #DEDEDE;
+}
+.wp-full-overlay-sidebar { 
+	background: #EFEFEF;
+}
+#customize-controls .control-section .accordion-section-title:focus, #customize-controls .control-section .accordion-section-title:hover, #customize-controls .control-section.open .accordion-section-title, #customize-controls .control-section:hover>.accordion-section-title {
+    background: #f5f5f5;
+}
+#customize-theme-controls .control-section .accordion-section-title:focus:after, #customize-theme-controls .control-section .accordion-section-title:hover:after, #customize-theme-controls .control-section.open .accordion-section-title:after, #customize-theme-controls .control-section:hover>.accordion-section-title:after {
+	color: #555;
+}
+.customize-control-checkbox label {
+	font-weight: 600;
+	font-size: 14px;
+}
+.customize-control-description {
+	font-weight: normal;
+}
+#customize-theme-controls .accordion-section-title {
+	color: #555;
+}
+#customize-control-helphealth_medical_customizer_section_heading .customize-control-title {
+	font-weight: 600;
+}
+#customize-control-helphealth_medical_header_topbar_message.customize-control-checkbox,
+#customize-control-helphealth_medical_header_topbar_email.customize-control-checkbox,
+#customize-control-helphealth_medical_header_topbar_phone.customize-control-checkbox,
+#customize-control-helphealth_medical_header_topbar_social_icons.customize-control-checkbox {
+	margin-bottom: 0;
+}
+#customize-control-helphealth_medical_header_topbar_social_icons.customize-control-checkbox {
+	margin-bottom: 20px;
+}
+#customize-control-helphealth_medical_header_topbar_message.customize-control-checkbox label,
+#customize-control-helphealth_medical_header_topbar_email.customize-control-checkbox label,
+#customize-control-helphealth_medical_header_topbar_phone.customize-control-checkbox label,
+#customize-control-helphealth_medical_header_topbar_social_icons.customize-control-checkbox label {
+	font-weight: 500;
+}
+.customize-control select {
+	min-width: 98%;
+}
+.control-section h3.accordion-section-title::before {
+	right: 0;
+	content: '\f105';
+	border: none;
+	background: 0 0;
+	font-family: FontAwesome;
+	speak: none;
+	display: block;
+	padding: 0;
+	text-indent: 0;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-decoration: none !important;
+	margin: 3px 10px 0 10px;
+	float: left;
+	width: 22px;
+	color: #232323;
+	font-size: 14px;
+	font-weight: ;
+}
+.nav-menus-php .item-edit:before, .widget-top a.widget-action:before {
+	content: '';
+}
+.control-section h3.accordion-section-title {
+	padding-left: 0;
+}
+#accordion-panel-widgets .control-section h3.accordion-section-title:before {
+	content: none;
+}
+#accordion-panel-widgets .control-section h3.accordion-section-title {
+	padding-left: 20px;
+}
+#accordion-panel-nav_menus .control-section h3.accordion-section-title:before {
+	content: none;
+}
+#accordion-panel-nav_menus .control-section h3.accordion-section-title {
+	padding-left: 20px;
+}
+/* Icons */
+/* Site Identity */
+#accordion-section-title_tagline h3.accordion-section-title:before {
+	content: '\f19c';
+}
+/* Menus */
+#accordion-panel-nav_menus > h3.accordion-section-title:before {
+	content: '\f0c9';
+} 
+#sub-accordion-panel-nav_menus h3.accordion-section-title:before {
+	content: none !important;
+} 
+#sub-accordion-panel-nav_menus h3.accordion-section-title {
+	padding-left: 14px;
+} 
+/* Widgets */
+#accordion-panel-widgets > h3.accordion-section-title:before {
+	content: '\f009';
+} 
+#sub-accordion-panel-widgets h3.accordion-section-title:before {
+	content: none !important;
+} 
+#sub-accordion-panel-widgets h3.accordion-section-title {
+	padding-left: 14px;
+} 
+/* Background Image */
+#accordion-section-background_image h3.accordion-section-title:before {
+	content: '\f03e';
+}  
+/* Custom CSS */ 
+#accordion-section-custom_css h3.accordion-section-title:before {
+	content: '\f044';
+}  
+/* Static Frontpage */ 
+#accordion-section-static_front_page h3.accordion-section-title:before {
+	content: '\f015';
+	font-size: 20px;
+}  
+/* Colors */
+#accordion-section-colors h3.accordion-section-title::before {
+	content: '\f043';
+} 
+/* Header Image */
+#accordion-section-header_image h3.accordion-section-title::before {
+	content: '\f09d ';
+}
+/* Frontpage Setup */
+#accordion-panel-helphealth_medical_frontpage_options h3.accordion-section-title::before {
+	content: '\f015';
+}
+#accordion-section-helphealth_medical_home_slider_options h3.accordion-section-title::before {
+	content: '\f09d';
+}
+#accordion-section-helphealth_medical_cta_options h3.accordion-section-title::before {
+	content: '\f210';
+}
+#accordion-section-helphealth_medical_map_options h3.accordion-section-title::before {
+	content: '\f279';
+}
+#accordion-section-helphealth_medical_testimonial_options h3.accordion-section-title::before {
+	content: '\f10d';
+}
+#accordion-section-helphealth_medical_recent_posts_options h3.accordion-section-title::before {
+	content: '\f00a';
+}
+#accordion-section-helphealth_medical_service_options h3.accordion-section-title::before {
+	content: '\f0f0';
+}
+#accordion-section-helphealth_medical_departments_options h3.accordion-section-title::before {
+	content: '\f19b';
+}
+#accordion-section-helphealth_medical_mission_options h3.accordion-section-title::before {
+	content: '\f06e';
+}
+#accordion-section-helphealth_medical_schedule_options h3.accordion-section-title::before {
+	content: '\f27a';
+}
+#accordion-section-helphealth_medical_features_options h3.accordion-section-title::before {
+	content: '\f209';
+}
+/* Contact Page Setup */
+#accordion-panel-contact_page_template h3.accordion-section-title::before {
+	content: '\f08d';
+}
+#accordion-section-contact_details_settings h3.accordion-section-title::before {
+	content: '\f2a0';
+}
+#accordion-section-contact_form_settings h3.accordion-section-title::before {
+	content: '\f27b';
+}
+#accordion-section-contact_map_settings h3.accordion-section-title::before {
+	content: '\f041';
+}
+/* Banner */
+.customize-control-helphealth-medical-radio-image img,
+#input_helphealth_medical_banner_layout img{
+    margin: 5px 0;
+    transition: all ease 0.23s;
+    border: 1px solid #fff;
+}
+.customize-control-helphealth-medical-radio-image input,
+#input_helphealth_medical_banner_layout input{
+	display: none;
+}
+.customize-control-helphealth-medical-radio-image img:hover, 
+.customize-control-helphealth-medical-radio-image input:checked + img,
+#input_helphealth_medical_banner_layout img:hover,
+#input_helphealth_medical_banner_layout input:checked + img{
+    border: 1px solid #3498de;
+    box-shadow: 0 0 7px rgb(34 113 177 / 83%);
+}
+#input_helphealth_medical_banner_layout label {
+    width: 48%;
+    float: left;
+    padding: 0 1%;
+}
+#input_blog_sidebar_layout label,
+#input_blog_post_view label {
+    max-width: 30%;
+    display: inline-block;
+    margin-right: 2%;
+}
+
+/* Theme Option */
+#accordion-panel-helphealth_medical_options h3.accordion-section-title::before {
+	content: '\f085';
+}
+#accordion-section-helphealth_medical_global_settings h3.accordion-section-title:before {
+	content: '\f0ac';
+}
+#accordion-section-helphealth_medical_header_settings h3.accordion-section-title:before {
+	content: '\f1b3';
+}
+#accordion-section-helphealth_medical_navigation_settings h3.accordion-section-title:before {
+	content: '\f0c9';
+}
+#accordion-section-helphealth_medical_blog_settings h3.accordion-section-title:before {
+	content: '\f0ce';
+}
+#accordion-section-helphealth_medical_footer_settings h3.accordion-section-title:before {
+	content: '\f009';
+}
+#accordion-section-helphealth_medical_footer_copyright h3.accordion-section-title:before {
+	content: '\f1f9';
+}
+#accordion-section-helphealth_medical_social_settings h3.accordion-section-title:before {
+	content: '\f0c0';
+}
+#accordion-section-helphealth_medical_page_settings h3.accordion-section-title:before {
+	content: '\f0f6';
+}
+#accordion-section-helphealth_medical_single h3.accordion-section-title:before {
+	content: '\f097';
+}
+#accordion-section-helphealth_medical_typography_settings h3.accordion-section-title:before {
+	content: '\f031';
+}
+#accordion-section-helphealth_medical_colors_settings h3.accordion-section-title:before {
+	content: '\f1fc';
+}
+#accordion-section-helphealth_medical_cta_settings h3.accordion-section-title:before {
+	content: '\f0ac';
+}
+#accordion-section-helphealth_medical_pro_details h3.accordion-section-title:before{
+	content: '\f219';
+	color:#ca4a1f;
+}
+#accordion-section-helphealth_medical_pro_details h3.accordion-section-title,
+#accordion-section-helphealth_medical_pro_details h3.accordion-section-title:after{
+	color:#ca4a1f;
+}
+/* COLOR PICKER ALPHA */
+
+/**
+ * Alpha Color Picker CSS
+ */
+.customize-control-alpha-color .wp-picker-container .iris-picker {
+    border-bottom:none;
+}
+.customize-control-alpha-color .wp-picker-container {
+    max-width: 257px;
+}
+.customize-control-alpha-color .wp-picker-open + .wp-picker-input-wrap {
+    width: 100%;
+}
+.customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
+    float: left;
+    width: 195px;
+}
+.customize-control-alpha-color .wp-picker-input-wrap .button {
+    margin-left: 0;
+    float: right;
+}
+.wp-picker-container .wp-picker-open ~ .wp-picker-holder .alpha-color-picker-container {
+    display: block;
+}
+.alpha-color-picker-container {
+    border: 1px solid #dfdfdf;
+    border-top: none;
+    display: none;
+    background: #FFF;
+    padding: 0 11px 10px;
+    position: relative;
+}
+.alpha-color-picker-container .ui-widget-content,
+.alpha-color-picker-container .ui-widget-header,
+.alpha-color-picker-wrap .ui-state-focus {
+    background: transparent;
+    border: none;
+}
+.alpha-color-picker-wrap a.iris-square-value:focus {
+    box-shadow: none;
+}
+.alpha-color-picker-container .ui-slider {
+    position: relative;
+    z-index: 1;
+    height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    width: 88%;
+    width: calc( 100% - 28px );
+}
+.alpha-color-picker-container .ui-slider-handle,
+.alpha-color-picker-container .ui-widget-content .ui-state-default {
+    color: #777;
+    background-color: #FFF;
+    text-shadow: 0 1px 0 #FFF;
+    text-decoration: none;
+    position: absolute;
+    z-index: 2;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin-top: -2px;
+    top: 0;
+    height: 26px;
+    width: 26px;
+    cursor: ew-resize;
+    font-size: 0;
+    padding: 0;
+    line-height: 27px;
+    margin-left: -14px;
+}
+.alpha-color-picker-container .ui-slider-handle.show-opacity {
+    font-size: 12px;
+}
+.alpha-color-picker-container .click-zone {
+    width: 14px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    left: 10px;
+}
+.alpha-color-picker-container .max-click-zone {
+    right: 10px;
+    left: auto;
+}
+.alpha-color-picker-container .transparency {
+    height: 24px;
+    width: 100%;
+    background-color: #FFF;
+    background-image: url(../images/transparency-grid.png);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4) inset;
+    border-radius: 3px;
+    padding: 0;
+    margin-top: -24px;
+}
+
+@media only screen and (max-width: 782px) {
+    .customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
+        width: 184px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .customize-control-alpha-color .wp-picker-input-wrap input[type="text"].wp-color-picker.alpha-color-control {
+        width: 172px;
+        height: 33px;
+    }
+}

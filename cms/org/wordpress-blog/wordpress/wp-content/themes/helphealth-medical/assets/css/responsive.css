@@ -1,0 +1,355 @@
+/* Hi-res laptops and desktops */
+@media (min-width: 1170px) and (max-width: 1600px) {
+	.container{width:1140px}
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+	.container,
+	.container-fluid{width:90%}
+	.department-area .section-heading {
+		padding-right: 0;
+		padding-top: 0;
+	}
+	.site-branding {
+		padding: 20px 0;
+	}
+	.post-content-wrap {
+		padding: 25px 20px 27px;
+	}
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {width:92%}
+	.site-branding {
+		padding: 20px 0;
+	}
+	.site-branding .site-text {
+		font-size: 32px;
+	}
+	.logo-area img {
+		max-width: 100%;
+	}
+	.header-right .mb-dotate-btn {
+		margin-left: 5px;
+	}
+	.mb-dotate-btn {
+		padding: 10px 20px;
+	}
+	#page-header {
+		height: 360px;
+	}
+	.banner-content .page-title {
+		font-size: 32px;
+	}
+	.department-area .section-heading {
+		padding-right: 0;
+		padding-top: 0;
+	}
+	.section {
+		padding: 75px 0 50px;
+	}
+	.section-heading {
+		margin-bottom: 60px;
+	}
+	.section-heading h2 {
+		font-size: 36px;
+	}
+	.department-area .container-fluid {
+		max-width: 92%;
+	}
+	.schedule-btn-wrap {
+		position: relative;
+		bottom: 0;
+	}
+	.single-slide {
+		min-height: 460px;
+	}
+	.slide-content h2,
+	.slide-content h2 a{
+		font-size: 40px;
+	}
+	.slide-controls .owl-nav .owl-prev {
+		left: -60px;
+	}
+	.slide-controls .owl-nav .owl-next {
+		right: -60px;
+	}
+	.slidenav i {
+		width: 25px;
+		height: 3px;
+	}
+	.mission-heading h2 {
+		padding: 140px 0 110px;
+		font-size: 50px;
+	}
+	.features-area {
+		padding: 25px 0 10px;
+	}
+	.feature {
+		padding:0;
+	}
+	.blog-section,
+	.schedule-area,
+	.section-map,
+	.footer-widgets {
+		padding: 70px 0 40px;
+	}
+	
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+	.container {
+		width:92%;
+	}
+	.xs-vertical-align .col-xs-3{
+		padding-left: 5px;
+		padding-right:5px;
+	}
+	.site-branding .container,
+	.search-container .container{
+		width: 100%;
+	}
+	.site-header .container-fluid {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.site-branding .site-text {
+		font-size: 20px;
+	}
+	.site-content{
+		padding: 45px 0;
+	}
+	.site-header {
+		padding: 5px 0;
+	}
+	.site-branding {
+		padding: 10px 0;
+	}
+	.logo-area {
+		margin: auto;
+		padding: 0 ;
+	}
+	.logo-area img {
+		max-width: 100%;
+	}
+	.header-right .social-list a {
+		margin-left: 3px;
+		padding: 0 2px;
+	}
+	.site-branding .vertical-align {
+		display: block;
+	}
+	.site-navigation {
+		display: none;
+	}
+	.nav-toggle,
+	.search-toggle,
+	.search-container.open,
+	.side-nav.show-nav{
+		display: block !important;
+	}
+	.header-left .location {
+		margin-bottom: 8px;
+		text-align: center;
+	}
+	#page-header {
+		height: 260px;
+		background-size: auto !important;
+	}
+	.single-slide {
+		min-height: 310px;
+	}
+	.slide-content-wrap {
+		padding: 65px 0 80px;
+		position: relative;
+	}
+	.slide-content h2,
+	.slide-content h2 a {
+		font-size: 28px;
+	}
+	.slidenav i {
+		width: 20px;
+		height: 2px;
+	}
+	.slidenav.left {
+		left: 45px;
+	}
+	.slidenav.right {
+		right: 15px;
+	}
+	.schedule-btn-wrap {
+		display: none;
+	}
+	.section {
+		padding: 50px 0 50px;
+	}
+	.section-heading {
+		margin-bottom: 45px;
+		text-align: left;
+	}
+	.section-heading h2 {
+		font-size: 32px;
+		line-height: 1.2;
+	}
+	.department-area .section-heading {
+		padding-right: 0;
+		padding-top: 20px;
+	}
+	.slide-controls.nav-topright .owl-nav .owl-next {
+		right: 0;
+	}
+	.slide-controls.nav-topright .owl-nav .owl-prev {
+		right: 45px;
+	}
+	.mission-area {
+		padding-bottom: 30px;
+	}
+	.mission-heading h2 {
+		padding: 120px 0 80px;
+		font-size: 32px;
+	}
+	.mission {
+		padding: 30px 15px 0;
+	}
+
+	.features-area {
+		padding: 30px 0 15px;
+	}
+	.feature {
+		padding: 0;
+		text-align: center;
+		max-width: 235px;
+		margin: auto;
+	}
+	.feature h3 {
+		font-size: 45px;
+	}
+	.testimonial {
+		margin-bottom: 0;
+	}
+	.blog-section,
+	.schedule-area,
+	.section-map,
+	.footer-widgets {
+		padding: 50px 0 30px;
+	}
+	.banner-content .page-title,
+	.entry-header .entry-title	{
+		font-size: 22px;
+	}
+	.helphealth-medical-post {
+		margin-bottom: 30px;
+	}
+	.post-content-wrap {
+		padding: 20px;
+	}
+	.entry-content h2{
+		font-size: 22px;
+	}
+	.related-heading {
+		margin-top: 15px;
+	}
+	.comments-area {
+		padding: 25px 20px 30px;
+	}
+	.half-field, 
+	.half-field-last {
+		width: 100%;
+	}
+	.comments-list .children {
+		margin: 0 0 0 10px;
+	}
+	.footer-menu {
+		margin-bottom: 15px;
+	}
+	.footer-menu li {
+		padding: 0 8px;
+		margin: 0;
+	}
+	.footer-menu li a {
+		padding: 0;
+		font-size: 14px;
+	}
+
+}
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.xs-vertical-align .col-xs-3{
+		padding-left: 15px;
+		padding-right:15px;
+	}
+	.site-header {
+		padding: 5px 0;
+	}
+	.site-branding {
+		padding: 10px 0;
+	}
+	.site-branding .site-text {
+		font-size: 24px;
+	}
+	.site-navigation {
+		display: none;
+	}
+	.site-branding .container,
+	.search-container .container{
+		width: 92%;
+	}
+	.logo-area {
+		max-width: 420px;
+		margin: auto;
+	}
+	.logo-area img {
+		max-width: 210px;
+	}
+	.header-right .social-list a {
+		margin-left: 2px;
+		padding: 0 5px;
+	}
+	.nav-toggle,
+	.search-toggle,
+	.search-container.open,
+	.side-nav.show-nav	{
+		display: block !important;
+	}
+	.single-slide .container {
+		width: 86%;
+	}
+	.slide-content h2,
+	.slide-content h2 a	{
+		font-size: 36px;
+	}
+	.slidenav i {
+		width: 25px;
+		height: 3px;
+	}
+	.slidenav.left {
+		left: 55px;
+	}
+	.slidenav.right {
+		right: 35px;
+	}
+	#page-header {
+		height: 280px;
+	}
+	.banner-content .page-title {
+		font-size: 24px;
+	}
+	.comments-list .children {
+		margin: 0 0 0 15px;
+	}
+	.footer-menu {
+		margin-bottom: 20px;
+	}
+	.footer-menu li {
+		padding: 0 12px;
+		margin: 0;
+	}
+	.footer-menu li a {
+		padding: 0;
+	}
+
+}
