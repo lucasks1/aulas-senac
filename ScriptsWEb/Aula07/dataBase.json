@@ -1,0 +1,20 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "nome": "Lucas"
+        },
+        {
+            "nome": "one piece",
+            "id": 2
+        }
+    ],
+    "pessoa": [
+        {
+            "id": 1,
+            "nome": "law",
+            "idade": 25,
+            "email": "law@gmail.com"
+        }
+    ]
+}
