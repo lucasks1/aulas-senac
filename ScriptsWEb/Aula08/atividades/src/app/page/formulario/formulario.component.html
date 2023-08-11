@@ -1,0 +1,30 @@
+<H1 class="text-center">Digite suas Informações</H1>
+<form [formGroup]="registrar" (ngSubmit)="enviar()">
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome</label>
+      <input type="text" class="form-control" formControlName="nome" id="nome" aria-describedby="emailHelp" placeholder="Insira seu nome" width="250px">
+      
+    </div>
+    <div class="mb-3">
+      <label for="idade" class="form-label">Idade</label>
+      <input type="number" class="form-control" id="idade" formControlName="idade">
+    </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="text" class="form-control" formControlName="email" id="email" aria-describedby="emailHelp" placeholder="*******@****.com">
+       
+      </div>
+      <div class="mb-3">
+        <label for="apelido" class="form-label">Apelido</label>
+        <input type="text" class="form-control" formControlName="apelido" id="apelido" aria-describedby="emailHelp">
+        
+      </div>
+      <div class="mb-3">
+        <label for="senha" class="form-label">Senha</label>
+        <input type="password" class="form-control" formControlName="senha" id="senha" aria-describedby="emailHelp" placeholder="Crie uma senha segura 1,2,3,.... nao serve">
+       
+      </div>
+      <div class="text-center">
+    <button type="submit" class="btn btn-primary ">Enviar</button>
+  </div>
+  </form>

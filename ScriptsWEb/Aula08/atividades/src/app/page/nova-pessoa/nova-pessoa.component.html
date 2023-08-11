@@ -1,0 +1,27 @@
+<h2>Insira suas informaçoes</h2>
+
+<form #f="ngForm" (ngSubmit)="submit(f)">
+    
+    <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" [(ngModel)]="dados.nome">
+    </div>
+    <div>
+        <label for="idade">Idade</label>
+        <input type="text" id="idade" name="idade" [(ngModel)]="dados.idade">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" [(ngModel)]="dados.email">
+    </div>
+    <div>
+        <label for="apelido">Apelido</label>
+        <input type="text" id="apelido" name="apelido" [(ngModel)]="dados.apelido">
+    </div>
+    <div>
+        <label for="senha">Senha</label>
+        <input type="text" id="senha" name="senha" [(ngModel)]="dados.senha">
+    </div>
+    <button type="submit">Enviar</button>
+    
+</form>

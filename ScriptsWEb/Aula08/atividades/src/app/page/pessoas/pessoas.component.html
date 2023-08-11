@@ -1,0 +1,35 @@
+<br>
+
+
+
+<h1 class="text-center">Tabela</h1>
+<table class="table ">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Idade</th>
+        <th scope="col">Email</th>
+        <th scope="col">Apelido</th>
+        <th scope="col">Senha</th>
+        <th scope="col">#</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let pessoa of pessoas">
+      <tr>
+        <th scope="row">{{pessoa.id}}</th>
+        <td>{{pessoa.nome}}</td>
+        <td>{{pessoa.idade}}</td>
+        <td>{{pessoa.email}}</td>
+        <td>{{pessoa.apelido}}</td>
+        <td>{{pessoa.senha}}</td>
+        <td><button [routerLink]=" '/atualizar/' + pessoa?.id "  >Atualizar</button>
+        <button (click)="deletar(pessoa.id)">Excluir</button>
+        </td>
+
+      </tr>
+      
+    </tbody>
+  </table>
+
+  <button [routerLink]="'/novo'" >Add new</button>
