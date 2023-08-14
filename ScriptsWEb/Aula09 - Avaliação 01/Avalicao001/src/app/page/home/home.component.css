@@ -1,0 +1,30 @@
+
+.todos{
+    text-align: center;
+    color: green;
+}
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que o container ocupe pelo menos a altura da tela */
+    background-color: #f0f0f0;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+ 
+  
