@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "projeto02": {
+    "exer1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/projeto02",
+            "outputPath": "dist/exer1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "projeto02:build:production"
+              "browserTarget": "exer1:build:production"
             },
             "development": {
-              "browserTarget": "projeto02:build:development"
+              "browserTarget": "exer1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "projeto02:build"
+            "browserTarget": "exer1:build"
           }
         },
         "test": {
@@ -94,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "64000d82-6f0e-4d10-93bd-cfae9e265342"
   }
 }

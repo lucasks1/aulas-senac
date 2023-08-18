@@ -7,16 +7,24 @@ import { LocalStorageComponent } from './page/local-storage/local-storage.compon
 
 
 import { FormsModule } from '@angular/forms';
+import { TokenComponent } from './page/token/token.component';
+
+import { TokenService } from 'src/app/model/token.service';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    LocalStorageComponent
+    LocalStorageComponent,
+    TokenComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
