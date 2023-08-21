@@ -1,0 +1,15 @@
+<div>
+    <h2>Registrar-se</h2>
+    <div>
+        <label for="">Email: </label>
+        <input type="text" [(ngModel)]="email">
+    </div>
+    <div>
+        <label for="">Senha: </label>
+        <input type="text" [(ngModel)]="senha">
+    </div>
+    <button (click)="registrar()">Cadastrar</button>
+    <div>
+        <p *ngIf="menssagem"> {{ menssagem }}</p>
+    </div>
+</div>
