@@ -4,9 +4,11 @@ import { CadastroComponent } from './page/cadastro/cadastro.component';
 import { HomeComponent } from './page/home/home.component';
 import { LoginComponent } from './page/login/login.component';
 
-const routes: Routes = [
 
-  {path:'', component:HomeComponent},
+import { AutoguardService } from './model/autoguard.service';
+
+const routes: Routes = [
+  {path:'', component:HomeComponent, canActivate:[AutoguardService]},
   {path:'login',component:LoginComponent},
   {path:'registrar', component:CadastroComponent}
 
