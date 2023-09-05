@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+    <ion-back-button></ion-back-button>
+    <ion-title>calcuradora</ion-title>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Primeiro número</ion-label>
+    <ion-input type="number" [(ngModel)]="nu1"></ion-input>
+    <ion-label position="floating">Segundo número</ion-label>
+    <ion-input type="number"  [(ngModel)]="nu2"></ion-input>
+  </ion-item>
+   
+  <p>Soma de {{nu1}} + {{nu2}} = {{nu1 + nu2}}</p>
+  <p>Subtração de {{nu1}} - {{nu2}} = {{nu1 - nu2}}</p>
+  <p>Divisão de {{nu1}} / {{nu2}} = {{nu1 % nu2}}</p>
+  <p>Multiplicação de {{nu1}} x {{nu2}} = {{nu1 * nu2}}</p>
+
+  <ion-button (click)="exibir()">Exibir Valores</ion-button>
+</ion-content>

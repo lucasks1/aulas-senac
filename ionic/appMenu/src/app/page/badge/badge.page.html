@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>badge</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Notificações</ion-label>
+    <ion-badge slot="start"> {{ notificacoes }} </ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Usuarios</ion-label>
+    <ion-badge slot="start"> 850 </ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Produtos</ion-label>
+    <ion-badge slot="danger"> 150 </ion-badge>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ativos</ion-label>
+    <ion-badge slot="dark"> 120 </ion-badge>
+  </ion-item>
+
+</ion-content>

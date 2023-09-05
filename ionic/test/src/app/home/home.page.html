@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header >
+
+
+
+<ion-content [fullscreen]="true">
+    <ion-button color="dark" (click)="sobre()">Ir para sobre <ion-icon name="reader-outline"></ion-icon></ion-button>
+
+    <p> Nome: {{nome}} </p>
+    <p> Idade: {{idade}} </p>
+
+    <p>Soma de 5 + 5 = {{ 5 + 5 }}</p>
+    <ion-button color="dark" (click)="calcuradora()">Ir para calcuradora <ion-icon name="calculator-outline"></ion-icon></ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar >
+    <p>footer</p>
+  </ion-toolbar>
+</ion-footer>

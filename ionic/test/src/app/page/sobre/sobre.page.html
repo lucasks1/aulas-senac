@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons>
+      <ion-back-button></ion-back-button>
+    <ion-title>sobre</ion-title>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+<ion-item>
+  <ion-label position="floating">Nome</ion-label>
+  <ion-input [(ngModel)]="nome"></ion-input>
+</ion-item>
+
+<ion-button (click)="exibir()">Exibir nome</ion-button>
+</ion-content>
