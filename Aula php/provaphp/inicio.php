@@ -25,6 +25,7 @@
 <body>
 
     <div class="container" style="margin-top: 40px">
+    <h1>Cadastor de Animes/Desenhos</h1>
         <form action="inseririnformações.php" method="post">
             <div class="mb-3">
                 <label>nome</label>
