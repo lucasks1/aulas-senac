@@ -1,7 +1,0 @@
-{
-  "name": "atv",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
